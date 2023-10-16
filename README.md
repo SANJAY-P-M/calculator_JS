@@ -1,4 +1,5 @@
-https://github.com/SANJAY-P-M/calculator_JS/assets/106712995/95b17433-47b5-449a-9cd9-0133acb95e98
+
+https://github.com/SANJAY-P-M/calculator_JS/assets/106712995/8b98b787-6ddf-4edd-a4b3-395bdfc7acd7
 
 
 # Calculator Web App - Day Three
