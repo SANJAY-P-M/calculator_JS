@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
@@ -12,40 +12,41 @@
         <div id="calculator">
             <input type="text" id="input">
             <div class="row">
-                <button id="clear">C</button>
-                <button id="invert">+/-</button>
-                <button id="modulo">%</button>
-                <button id="divition">/</button>
+                <button id="clear" onclick="clearInputField()">C</button>
+                <button id="invert" onclick="invertSign()">+/-</button>
+                <button id="modulo" onclick="appendValueToInput(event)">%</button>
+                <button id="divition" onclick="appendValueToInput(event)">/</button>
             </div>
             
             <div class="row">
-                <button id="7">7</button>
-                <button id="8">8</button>
-                <button id="9">9</button>
-                <button id="*">*</button>
+                <button id="7" onclick="appendValueToInput(event)">7</button>
+                <button id="8" onclick="appendValueToInput(event)">8</button>
+                <button id="9" onclick="appendValueToInput(event)">9</button>
+                <button id="*" onclick="appendValueToInput(event)">*</button>
             </div>
             
             <div class="row">
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button>
-                <button id="-">-</button>
+                <button id="4" onclick="appendValueToInput(event)">4</button>
+                <button id="5" onclick="appendValueToInput(event)">5</button>
+                <button id="6" onclick="appendValueToInput(event)">6</button>
+                <button id="-" onclick="appendValueToInput(event)">-</button>
             </div>
             
             <div class="row">
-                <button id="1">1</button>
-                <button id="2">2</button>
-                <button id="3">3</button>
-                <button id="+">+</button>
+                <button id="1" onclick="appendValueToInput(event)">1</button>
+                <button id="2" onclick="appendValueToInput(event)">2</button>
+                <button id="3" onclick="appendValueToInput(event)">3</button>
+                <button id="+" onclick="appendValueToInput(event)">+</button>
             </div>
             
             <div class="row" id="last-row">
-                <button id="zero">0</button>
-                <button id=".">.</button>
-                <button id="=">=</button>
+                <button id="zero" onclick="appendValueToInput(event)">0</button>
+                <button id="." onclick="appendValueToInput(event)">.</button>
+                <button id="=" onclick="equals()">=</button>
             </div>
         </div>
         
     </div>
 </body>
+<script src="calculator.js"></script>
 </html>
