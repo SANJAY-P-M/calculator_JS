@@ -22,9 +22,10 @@ body{
 #calculator{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom right,#FD32C9,#7F4AF0);
+    background-image: linear-gradient(to bottom,#FD32C9,#7F4AF0);
     width: 40%;
     height: 80%;
+    border-radius: 10px;
 }
 #calculator .row{
     flex-grow: 1;
@@ -36,7 +37,7 @@ body{
 /* aligning all buttons */
 
 .row button{
-    flex-grow: 1;
+    flex: 1;
     background-color: rgba(255, 255, 255, 0.204);
     border-color: transparent;
     margin: 1.5px;
@@ -46,7 +47,17 @@ body{
 /* input space  */
 
 #calculator input{
-    flex-grow: 2;
+    flex: 2;
     border: none;
     background-color: transparent;
+    font-size: xx-large;
+    text-align: right;
+}
+#calculator input:focus{
+    outline:none;
+}
+
+/* updating the last row separately */
+#zero{
+    flex: 2 ;
 }
